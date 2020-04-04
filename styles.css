@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: #ffffff;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+/* CONTAINERS */
+
+.container {
+    margin: 4rem 2rem 2rem;
+    max-width: 41rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.box {
+    padding: 2.7rem;
+}
+
+/* JOIN */
+
+.join {
+    background-color: var(--white);
+    grid-column: 1 / -1;
+}
+
+.join h3 {
+    color: var(--cyan);
+    font-size: 25px;
+}
+
+.join h4 {
+    color: var(--bright-yellow);
+    font-size: 18px;
+    padding: 25px 0 10px;
+}
+
+.join p {
+    color: var(--grayish-blue);
+    line-height: 26px;
+}
+
+/* SIGN UP */
+
+.sign-up {
+    background-color: var(--cyan);
+    color: var(--white);
+}
+
+.sign-up h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sign-up h5 {
+    font-size: 30px;
+    padding: 20px 0 5px;
+}
+
+.sign-up span {
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.sign-up p {
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+.sign-up button {
+    width: 100%;
+    background: var(--bright-yellow);
+    border: solid var(--bright-yellow) 1px;
+    border-radius: 6px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+
+.sign-up button:hover {
+    background: hsl(71, 70%, 68%);
+    cursor: pointer;
+}
+
+/* WHY US? */
+
+.why-us {
+    background: hsl(179, 53%, 53%);
+    color: var(--white);
+}
+
+.why-us h4 {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.why-us ul {
+    color: var(--light-gray);
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
